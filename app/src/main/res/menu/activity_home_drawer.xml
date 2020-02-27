@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/add_income"
+            android:icon="@drawable/income"
+            android:title="Add Income" />
+        <item
+            android:id="@+id/add_expense"
+            android:icon="@drawable/ic_trending_down_black_24dp"
+            android:title="Add Expense" />
+
+    </group>
+
+    <item
+        android:id="@+id/view_report_today"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Today">
+
+        <menu>
+            <group   android:checkableBehavior="single">
+                <item
+                    android:id="@+id/today"
+                    android:icon="@drawable/report"
+                    android:title="Today's List" />
+
+            </group>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/bill"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Bill">
+
+        <menu>
+            <group   android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/addbill"
+                    android:icon="@drawable/report"
+                    android:title="Add Bill" />
+                <item
+                    android:id="@+id/viewbill"
+                    android:icon="@drawable/report"
+                    android:title="View Bill" />
+            </group>
+        </menu>
+
+    </item>
+
+
+
+
+        <item
+            android:id="@+id/view_report"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Report">
+
+            <menu>
+                <group   android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/Catagory_wise"
+                    android:icon="@drawable/report"
+                    android:title="Catagory Wise" />
+                <item
+                    android:id="@+id/item_wise"
+                    android:icon="@drawable/report"
+                    android:title="Item Wise" />
+                </group>
+            </menu>
+
+        </item>
+
+    <group>
+        <item android:title="Export">
+            <menu>
+                <item
+                    android:id="@+id/exportxls"
+                    android:icon="@drawable/ic_import_export_black_24dp"
+                    android:title="Export Spreadsheet"
+                    />
+            </menu>
+        </item>
+    </group>
+
+
+    <group>
+        <item android:title="Exit">
+        <menu>
+            <item
+                android:id="@+id/exitnav"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Exit"
+                />
+        </menu>
+        </item>
+    </group>
+
+
+</menu>
